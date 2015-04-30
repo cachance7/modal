@@ -9,14 +9,16 @@ Prerequisites
 
 - [gulp](http://gulpjs.com/)
     * Install with npm
-```
-npm install -g gulp
-```
+
+      ```
+      npm install -g gulp
+      ```
 - [karma](http://karma-runner.github.io/0.12/index.html)
     * Install with npm
-```
-npm install -g karma
-```
+
+      ```
+      npm install -g karma
+      ```
 
 Usage
 ---
