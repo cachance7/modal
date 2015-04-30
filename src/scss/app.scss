@@ -69,3 +69,9 @@ $alert-width:300px;
     @include hcentered();
     bottom: 10%;
 }
+
+#repo-link {
+    font-family: sans-serif;
+    @include hcentered();
+    bottom: 2%;
+}
