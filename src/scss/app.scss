@@ -1,0 +1,71 @@
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+@mixin hcentered(){
+    position: fixed;
+    left: 50%;
+    /* bring your own prefixes */
+    @include translate(-50%, 0%);
+}
+
+@mixin vcentered(){
+    position: fixed;
+    top: 50%;
+    /* bring your own prefixes */
+    @include translate(0%, -50%);
+}
+
+@mixin centered(){
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+}
+
+$alert-height:200px;
+$alert-width:300px;
+
+#alert-text{
+    color: black;
+    @include centered();
+}
+.centered{
+    @include centered();
+}
+
+#alert-container{
+    background: white;
+    border: 1px gray solid;
+    box-shadow: 2px 5px 5px 1px black;
+    border-radius: 5px;
+    height: $alert-height;
+    width: $alert-width;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#alert-mask{
+    //z-index: 99;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.6;
+}
+
+#alert-buttons{
+    @include hcentered();
+    bottom: 10%;
+}

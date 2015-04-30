@@ -1,0 +1,12 @@
+<div id='alert-component'>
+    <div id='alert-mask'></div>
+    <div id='alert-container' class='centered'>
+        <div id='alert-text'>{{alertText}}</div>
+        <div id='alert-buttons'>
+        {{#buttons}}
+        <button>{{text}}</button>
+        {{/buttons}}
+        </div>
+    </div>
+</div>
+
