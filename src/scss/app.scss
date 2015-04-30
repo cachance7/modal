@@ -34,11 +34,16 @@
 $alert-height:200px;
 $alert-width:300px;
 
-#alert-text{
-    color: black;
+.centered{
     @include centered();
 }
-.centered{
+
+#hdr {
+    text-align: center;
+}
+
+#alert-text{
+    color: black;
     @include centered();
 }
 
