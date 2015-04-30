@@ -1,7 +1,7 @@
 modal
 ===
 
-A project to get familiar with the gulp automation framework.
+A project to get familiar with the gulp automation framework. Substantial portions of gulp task code pulled from [gulp-starter](https://github.com/greypants/gulp-starter).
 
 Prerequisites
 ---
