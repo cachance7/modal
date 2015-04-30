@@ -22,18 +22,21 @@ Usage
 ---
 
 1. Install the project dependencies.
-```
-npm install
-```
+
+   ```
+   npm install
+   ```
 2. Run gulp task **default** or **production**.
-```
-# Default task -- it will also watch for changes
-gulp
-```
-```
-# Production task -- it will run browser tests before deploying
-gulp production
-```
+
+   ```
+   # Default task -- it will also watch for changes
+   gulp
+   ```
+
+   ```
+   # Production task -- it will run browser tests before deploying
+   gulp production
+   ```
 3. Serve contents of 'dist' directory.
 
 Notes
