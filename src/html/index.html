@@ -6,6 +6,19 @@
         <title>Fancy Alert</title>
         <link rel="stylesheet" href="app.css" type="text/css" media="screen" title="no title" charset="utf-8">
         <script src="bundle.js"></script>
+        <script id="alert-tpl" type="x-tmpl-mustache">
+            <div id="alert-component">
+                <div id="alert-mask"></div>
+                <div id="alert-container" class="centered">
+                    <div id="alert-text">{{alertText}}</div>
+                    <div id="alert-buttons">
+                    {{#buttons}}
+                    <button>{{text}}</button>
+                    {{/buttons}}
+                    </div>
+                </div>
+            </div>
+        </script>
     </head>
     <body>
         <div class="centered">
